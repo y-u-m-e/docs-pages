@@ -1,0 +1,36 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "docs-pages",
+  "compatibility_date": "2025-05-21",
+  
+  // Cloudflare Pages configuration
+  "pages_build_output_dir": "build",
+  
+  "observability": {
+    "enabled": true
+  },
+
+  // ===========================================
+  // PRODUCTION (main branch)
+  // ===========================================
+  // Domain: docs.emuy.gg
+  // Build command: npm run build
+  // Output directory: build
+
+  // ===========================================
+  // PREVIEW (dev branch / PRs)
+  // ===========================================
+  // Deploys to *.docs-pages.pages.dev preview URLs
+  
+  "vars": {
+    "ENVIRONMENT": "production"
+  },
+
+  "env": {
+    "preview": {
+      "vars": {
+        "ENVIRONMENT": "preview"
+      }
+    }
+  }
+}
