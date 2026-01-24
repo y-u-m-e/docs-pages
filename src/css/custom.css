@@ -3,20 +3,6 @@
  * Docusaurus customizations
  */
 
-/* Staging banner offset - adds padding when banner is present */
-/* The banner is 40px tall, so we offset the navbar */
-html.is-staging .navbar {
-  top: 40px;
-}
-
-html.is-staging .main-wrapper {
-  margin-top: 40px;
-}
-
-html.is-staging .navbar-sidebar {
-  top: 40px;
-}
-
 /* Custom color palette */
 :root {
   --ifm-color-primary: #7c3aed;

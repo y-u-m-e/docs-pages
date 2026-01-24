@@ -1,12 +1,14 @@
 import React from 'react';
-import StagingBanner from '../components/StagingBanner';
+import { AuthProvider } from '../contexts/AuthContext';
+import StagingGate from '../components/StagingGate';
 
-// Wrap the entire site with the staging banner
+// Wrap the entire site with auth and staging gate
 export default function Root({ children }: { children: React.ReactNode }): JSX.Element {
   return (
-    <>
-      <StagingBanner />
-      {children}
-    </>
+    <AuthProvider>
+      <StagingGate>
+        {children}
+      </StagingGate>
+    </AuthProvider>
   );
 }
