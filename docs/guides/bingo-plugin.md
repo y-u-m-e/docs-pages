@@ -18,8 +18,6 @@ Complete guide to using the RuneLite Bingo Tracker plugin for automatic achievem
 4. Search for "Bingo Tracker"
 5. Click Install
 
-![Plugin Hub](/img/guides/plugin-hub.png)
-
 ### Step 2: Register for an Event
 
 1. Visit [bingo.emuy.gg](https://bingo.emuy.gg)
@@ -39,8 +37,6 @@ The API key is only shown once during registration. If you lose it, you'll need 
 2. Find "Bingo Tracker" in the sidebar
 3. Enter your API key
 4. Verify the event ID matches your event
-
-![Plugin Config](/img/guides/plugin-config.png)
 
 ---
 
