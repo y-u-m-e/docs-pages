@@ -2,60 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Yume Tools Documentation</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Documentation for Yume Tools OSRS clan management APIs">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="icon" type="image/png" href="https://emuy.gg/favicon/favicon-32x32.png">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emuy Docs - Under Development</title>
   <style>
-    :root {
-      --theme-color: #a855f7;
-      --cover-background: linear-gradient(to right, #1e1233, #0f0a19);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    .sidebar {
-      background-color: #0f0a19;
+    
+    body {
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0a0a0f 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
     }
-    .sidebar-nav {
-      padding-top: 20px;
+    
+    .container {
+      max-width: 600px;
+      text-align: center;
     }
-    .markdown-section {
-      max-width: 900px;
+    
+    .icon-wrapper {
+      width: 128px;
+      height: 128px;
+      margin: 0 auto 32px;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(147, 51, 234, 0.2));
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(8px);
     }
-    .markdown-section code {
-      background-color: #1e1233;
+    
+    .icon {
+      width: 64px;
+      height: 64px;
+      color: #60a5fa;
     }
-    .markdown-section pre {
-      background-color: #1e1233;
+    
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    
+    .subtitle {
+      font-size: 20px;
+      color: #60a5fa;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 9999px;
+      margin-bottom: 32px;
+    }
+    
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      background: #60a5fa;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    .badge-text {
+      font-size: 14px;
+      color: #60a5fa;
+      font-weight: 500;
+    }
+    
+    .description {
+      font-size: 18px;
+      color: #d1d5db;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    
+    .feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+    }
+    
+    .feature-icon {
+      font-size: 24px;
+    }
+    
+    .feature-text {
+      font-size: 14px;
+      color: #9ca3af;
+    }
+    
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    
+    .button:hover {
+      background: #2563eb;
+    }
+    
+    .button svg {
+      width: 16px;
+      height: 16px;
+    }
+    
+    .footer {
+      position: fixed;
+      bottom: 24px;
+      color: #6b7280;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'Yume Tools',
-      repo: '',
-      loadSidebar: true,
-      subMaxLevel: 3,
-      search: {
-        placeholder: 'Search...',
-        noData: 'No Results!',
-      },
-      auto2top: true,
-      coverpage: true,
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- Search plugin -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <!-- Syntax highlighting -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+  <div class="container">
+    <div class="icon-wrapper">
+      <svg class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+      </svg>
+    </div>
+
+    <h1>Documentation</h1>
+    
+    <p class="subtitle">Emuy API & Tools Documentation</p>
+
+    <div class="badge">
+      <span class="badge-dot"></span>
+      <span class="badge-text">Under Development</span>
+    </div>
+
+    <p class="description">
+      Comprehensive documentation for the Emuy ecosystem, including API references, 
+      guides, and integration tutorials.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <span class="feature-icon">📖</span>
+        <span class="feature-text">API Reference</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🚀</span>
+        <span class="feature-text">Quick Start</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🔧</span>
+        <span class="feature-text">Integrations</span>
+      </div>
+    </div>
+
+    <a href="https://emuy.gg" class="button">
+      <span>Visit Main Site</span>
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+      </svg>
+    </a>
+  </div>
+
+  <div class="footer">
+    © 2026 Emuy Documentation
+  </div>
 </body>
 </html>
-
