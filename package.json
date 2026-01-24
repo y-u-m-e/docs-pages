@@ -1,0 +1,14 @@
+{
+  "name": "docs-pages",
+  "version": "1.0.0",
+  "description": "Documentation site for Yume Tools (docs.emuy.gg)",
+  "scripts": {
+    "dev": "docsify serve ./docs --port 4000",
+    "deploy": "npx wrangler pages deploy docs"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.4.4",
+    "wrangler": "^3.0.0"
+  }
+}
+
